@@ -1,0 +1,93 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@logtail/browser": "^0.1.12",
+    "@logtail/js": "^0.1.12",
+    "@logtail/node": "^0.1.12",
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/pickers": "^3.2.10",
+    "@mui/material": "^5.10.7",
+    "@react-icons/all-files": "^4.1.0",
+    "@redux-saga/core": "^1.2.1",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@testing-library/jest-dom": "^5.0.2",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.1.0",
+    "axios": "^0.27.2",
+    "browser-detect": "^0.2.28",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.9.0",
+    "detect-browser": "^5.3.0",
+    "formik": "^2.1.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "prop-types": "^15.7.2",
+    "qs": "^6.11.0",
+    "react": "^17.0.2",
+    "react-d3-speedometer": "^1.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.35.0",
+    "react-icons": "^4.4.0",
+    "react-lazylog": "^4.5.3",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^5.3.3",
+    "react-saga": "^0.3.1",
+    "react-scripts": "^5.0.1",
+    "react-scroll-horizontal": "^1.6.6",
+    "react-select": "^5.4.0",
+    "redux": "^4.2.0",
+    "redux-saga": "^1.2.1",
+    "redux-saga-effects": "^1.1.0",
+    "styled-components": "^5.3.5",
+    "url-local": "^1.1.9",
+    "yup": "^0.28.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "proxy": "http://localhost:8070",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "1.19.1",
+    "react-error-overlay": "6.0.9"
+  },
+  "browser": {
+    "fs": false
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}
