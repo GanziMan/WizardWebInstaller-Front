@@ -16,7 +16,7 @@ const installs = [
   // }
 ];
 
-export default function InstallForm() {
+export default function ThreeStep() {
   const [Install, setInstall] = useState('기본설치');
   const handleChange = (event) => {
     setInstall(event.target.value);

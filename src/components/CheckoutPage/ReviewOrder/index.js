@@ -1,2 +1,4 @@
-import ReviewOrder from './ReviewOrder';
-export default ReviewOrder;
+//Component
+import FourStep from './FourStep';
+
+export default FourStep;
