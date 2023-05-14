@@ -1,4 +1,4 @@
 //Component
-import FourStep from './FourStep';
+import FourStep from "../Forms/FourStep";
 
 export default FourStep;

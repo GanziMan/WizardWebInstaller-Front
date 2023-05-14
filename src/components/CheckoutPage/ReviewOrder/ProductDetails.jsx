@@ -14,9 +14,9 @@ import { encrypt } from "../../../aes256";
 import { useHistory } from "react-router-dom";
 
 function ProductDetails() {
+  const dispatch = useDispatch();
   const history = useHistory();
   const classes = useStyles();
-  const dispatch = useDispatch();
   const state = useSelector((state) => state);
   const [startFlag, setStartFlag] = useState("N");
 
@@ -43,7 +43,7 @@ function ProductDetails() {
         state.AccountReducer.os
       )
     );
-    history.push("./step2");
+    history.push("./progress");
   };
   return (
     <React.Fragment>

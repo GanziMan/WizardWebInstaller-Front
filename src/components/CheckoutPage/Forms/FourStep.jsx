@@ -1,5 +1,5 @@
-import React from 'react';
-import ProductDetails from './ProductDetails';
+import React from "react";
+import ProductDetails from "../ReviewOrder/ProductDetails";
 
 export default function FourStep() {
   return (

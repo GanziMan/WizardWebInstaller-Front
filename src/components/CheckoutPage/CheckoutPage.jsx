@@ -21,10 +21,10 @@ import formInitialValues from "./FormModel/formInitialValues";
 import useStyles from "./styles";
 
 //Step
-import LogForm from "./Forms/LogForm";
 import FirstStep from "./Forms/FirstStep";
 import TwoStep from "./Forms/TwoStep";
 import ThreeStep from "./Forms/ThreeStep";
+import InstallerLog from "./Forms/InstallerLog";
 
 const { formId, formField } = checkoutFormModel;
 const steps = ["구성 선택", "호스트 설정", "설치모드", "OS"];
@@ -40,17 +40,18 @@ function _renderStepContent(step) {
     case 3:
       return <ReviewOrder></ReviewOrder>;
     case 4:
-      return <LogForm />;
+      return <InstallerLog />;
     default:
       return <div>Not Found</div>;
   }
 }
 //
 export default function CheckoutPage() {
-  const classes = useStyles();
   const [activeStep, setActiveStep] = useState(0);
+  const classes = useStyles();
   const currentValidationSchema = validationSchema[activeStep];
   const isLastStep = activeStep === steps.length - 1;
+
   function _sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
@@ -166,9 +167,9 @@ export default function CheckoutPage() {
         </React.Fragment>
       </Route>
 
-      <Route exact path="/step2" component={LogForm}></Route>
-      <Route exact path="/step3" component={CheckoutSuccess}></Route>
-      <Route exact path="/step4" component={CheckoutFailed}></Route>
+      <Route exact path="/progress" component={InstallerLog}></Route>
+      <Route exact path="/success" component={CheckoutSuccess}></Route>
+      <Route exact path="/failed" component={CheckoutFailed}></Route>
     </Router>
   );
 }
